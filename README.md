@@ -25,15 +25,24 @@ Visit the deployed app at: [https://cyberkonsults.vercel.app](https://cyberkonsu
 ```
 cyberkonsults/
 ├── public/
+│   └── logo.png (optional assets)
 ├── src/
 │   ├── components/
+│   │   └── Button.jsx (if customized)
 │   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Resources.jsx
+│   │   ├── Contact.jsx
+│   │   └── Dashboard.jsx
 │   ├── App.jsx
 │   └── index.js
 ├── README.md
 ├── package.json
 ├── tailwind.config.js
 └── postcss.config.js
+
 ```
 
 ---
@@ -71,5 +80,5 @@ Coming soon — we welcome educators, parents, developers, and designers to coll
 
 ## 📬 Contact
 **Cyberkonsults LLC**  
-📧 info@cyberkonsults.com  
-🌐 [www.cyberkonsults.com](https://dp.cyberkonsults.org)
+📧 tunjitaiwo@cyberkonsults.org  
+🌐 [dp.cyberkonsults.org](https://dp.cyberkonsults.org)
