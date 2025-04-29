@@ -33,20 +33,43 @@ This platform empowers parents and young adults (ages 11+) to develop strong dig
 
 ```plaintext
 cyberkonsults_full_site/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── assets/
-│   ├── App.jsx
-│   ├── index.js
-│   └── index.css
+├── .gitignore
+├── .env                     # DO NOT commit — stores Supabase keys
+├── README.md                # Full GitHub repo readme
+├── netlify.toml             # Optional: Netlify deployment config
+├── vercel.json              # Optional: Vercel deployment config
 ├── package.json
-├── tailwind.config.js
 ├── postcss.config.js
+├── tailwind.config.js
 ├── vite.config.js
-├── netlify.toml
-├── vercel.json
-└── README.md
+│
+├── public/
+│   └── index.html           # Root HTML file
+│
+├── src/
+│   ├── index.js             # React entry point
+│   ├── index.css            # Tailwind styles
+│   ├── App.jsx              # React Router + layout wrapper
+│   ├── supabase.js          # Supabase client (reads from .env)
+│
+│   ├── assets/
+│   │   └── cyberkonsults_logo.png     # Company logo
+│
+│   ├── components/
+│   │   ├── NavBar.jsx
+│   │   ├── QuizLauncher.jsx
+│   │   ├── BadgeDashboard.jsx
+│   │   ├── AdminDashboard.jsx
+│   │   ├── CertificateGenerator.jsx   # Download certificate as PDF
+│   │   ├── BeginnerQuiz.jsx
+│   │   ├── IntermediateQuiz.jsx
+│   │   └── ExpertQuiz.jsx
+│
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx               # With EmailJS integration
+│   │   └── Blog.jsx                  # Blog + Events listing
+│
+│   ├── services/
+│   │   ├── auth.js                   # Signup/login logic
+│   │   └── quizService.js           # Submit quiz to Supabase
