@@ -1,0 +1,13 @@
+# GitHub Upload Instructions for Cyberkonsults
+
+1. Open your terminal.
+2. Navigate to the extracted `cyberkonsults_full_site/` directory.
+3. Run the following commands:
+
+```bash
+git init
+git add .
+git commit -m "Initial Commit: Cyberkonsults Launch 🚀"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/cyberkonsults.git
+git push -u origin main

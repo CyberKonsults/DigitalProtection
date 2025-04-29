@@ -1,0 +1,17 @@
+
+---
+
+# 🌎 Netlify Deployment Walkthrough
+
+### `Netlify_Deployment_Walkthrough.md`
+```markdown
+# Netlify Deployment Steps for Cyberkonsults
+
+1. Visit https://www.netlify.com/
+2. Sign Up or Log In
+3. Click "Add New Site" → "Import from Git" or "Deploy manually"
+4. If manually:
+   - Drag and drop the `/dist/` folder after running:
+   ```bash
+   npm install
+   npm run build

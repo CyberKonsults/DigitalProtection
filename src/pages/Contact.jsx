@@ -1,16 +1,39 @@
+import React, { useState } from 'react';
+
 export default function Contact() {
-    return (
-      <section className="p-6 bg-blue-100">
-        <h2 className="text-2xl font-semibold text-blue-700">Contact Us</h2>
-        <p className="mt-2 text-gray-700">Email: info@cyberkonsults.com</p>
-        <p>Phone: [Insert Number]</p>
-        <form className="mt-4 space-y-2 max-w-md">
-          <input placeholder="Your Name" className="w-full p-2 border rounded" />
-          <input placeholder="Your Email" className="w-full p-2 border rounded" />
-          <textarea placeholder="Your Message" className="w-full p-2 border rounded h-24" />
-          <button className="bg-blue-700 text-white px-4 py-2 rounded" type="submit">Send</button>
-        </form>
-      </section>
-    );
-  }
-  
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you, ${form.name}! We'll get back to you soon.`);
+    setForm({ name: '', email: '', message: '' });
+  };
+
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-4 text-blue-700">Contact Us</h1>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block mb-1">Name:</label>
+          <input type="text" name="name" value={form.name} onChange={handleChange}
+            className="border p-2 w-full rounded" required />
+        </div>
+        <div>
+          <label className="block mb-1">Email:</label>
+          <input type="email" name="email" value={form.email} onChange={handleChange}
+            className="border p-2 w-full rounded" required />
+        </div>
+        <div>
+          <label className="block mb-1">Message:</label>
+          <textarea name="message" value={form.message} onChange={handleChange}
+            className="border p-2 w-full rounded" rows="4" required />
+        </div>
+        <button type="submit" className="bg-blue-700 text-white px-4 py-2 rounded">Submit</button>
+      </form>
+    </div>
+  );
+}

@@ -1,20 +1,26 @@
-import React from "react";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Resources from "./pages/Resources";
-import Contact from "./pages/Contact";
-import Dashboard from "./pages/Dashboard";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import BadgeDashboard from './components/BadgeDashboard';
+import QuizLauncher from './components/QuizLauncher';
+import AdminDashboard from './components/AdminDashboard';
 
 export default function App() {
   return (
-    <div className="font-sans text-gray-900 bg-white">
-      <Home />
-      <About />
-      <Services />
-      <Resources />
-      <Contact />
-      <Dashboard />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-100">
+        <NavBar />
+        <main className="p-4">
+          <Routes>
+            <Route path="/" element={<><QuizLauncher /><BadgeDashboard /></>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
