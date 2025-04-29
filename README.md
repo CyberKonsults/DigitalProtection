@@ -1,4 +1,4 @@
-# 🌍 Cyberkonsults — Empowering Families in a Digital World
+# 🌍 Cyberkonsults Digital Protection Online — Empowering Families in a Digital World
 
 Welcome to the official Cyberkonsults platform repository!  
 This platform empowers parents and young adults (ages 11+) to develop strong digital safety skills through interactive quizzes, achievement badges, downloadable certificates, and live resources.
