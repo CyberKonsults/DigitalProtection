@@ -12,6 +12,7 @@
         "@vitejs/plugin-react": "^4.4.1",
         "html2canvas": "^1.4.1",
         "jspdf": "^3.0.1",
+        "node.js": "^0.0.1-security",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
         "react-router-dom": "^7.5.3"

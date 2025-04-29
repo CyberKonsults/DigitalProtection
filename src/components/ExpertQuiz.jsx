@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { submitQuiz } from '../services/quizService';
+import { submitQuiz } from '../services/quizService.js';
 
 export default function ExpertQuiz() {
   const questions = [

@@ -1,5 +1,5 @@
 import { supabase } from '../supabase';
-import { getUser } from './auth';
+import { getUser } from './auth.js';
 
 export async function submitQuiz(level, score, passed) {
   const user = await getUser();
