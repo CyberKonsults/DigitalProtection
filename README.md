@@ -1,84 +1,52 @@
-# Cyberkonsults
+# 🌍 Cyberkonsults Digital Protection Online — Empowering Families in a Digital World
 
-**Empowering Families in the Digital World**
+Welcome to the official Cyberkonsults platform repository!  
+This platform empowers parents and young adults (ages 11+) to develop strong digital safety skills through interactive quizzes, achievement badges, downloadable certificates, and live resources.
 
-Cyberkonsults is an educational web platform that helps parents and teens (ages 11–18) navigate online life safely through engaging curriculum, printable tools, quizzes, and certificate-based training.
-
----
-
-## 🌐 Live Site
-Visit the deployed app at: [https://cyberkonsults.vercel.app](https://cyberkonsults.vercel.app)
+![Cyberkonsults Banner](./public/banner.jpg) <!-- You can add a banner later -->
 
 ---
 
-## 🔍 Features
-- Age-based curriculum: Beginner to Expert
-- Responsive React + Tailwind CSS site
-- Multilingual toggle (EN, ES, FR, ZH)
-- Live & virtual workshops
-- Digital safety dashboard for quizzes and badges
-- Printables: checklists, pledges, guides
+## 🚀 Live Demo
+
+[Visit Cyberkonsults Website](https://your-custom-domain.com)
 
 ---
 
-## 📁 Folder Structure
-```
-cyberkonsults/
+## 📚 Features
+
+- Persona-driven Experiences (Parents / Young Adults)
+- Multilingual Support (EN, ES, FR, ZH, YO, HA, IG)
+- Interactive Beginner / Intermediate / Expert Quizzes
+- Dynamic Badge Unlock System
+- Certificate Generator (PDF download)
+- Admin Dashboard (track learner progress)
+- Blog & Events Page
+- Live Email Contact Form (EmailJS integration)
+- Fully Mobile Responsive
+- SEO Optimized
+- Global Hosting Ready (Netlify / Vercel)
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+cyberkonsults_full_site/
 ├── public/
-│   └── logo.png (optional assets)
+│   └── index.html
 ├── src/
 │   ├── components/
-│   │   └── Button.jsx (if customized)
 │   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Services.jsx
-│   │   ├── Resources.jsx
-│   │   ├── Contact.jsx
-│   │   └── Dashboard.jsx
+│   ├── services/
+│   ├── assets/
 │   ├── App.jsx
-│   └── index.js
-├── README.md
+│   ├── index.js
+│   └── index.css
 ├── package.json
 ├── tailwind.config.js
-└── postcss.config.js
-
-```
-
----
-
-## 🚀 Quick Start
-```bash
-# Clone the repo
-https://github.com/your-username/cyberkonsults.git
-cd cyberkonsults
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Visit: [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📦 Deploy via Vercel
-```bash
-npm install -g vercel
-vercel
-vercel --prod
-```
-
----
-
-## 🧩 Contributing
-Coming soon — we welcome educators, parents, developers, and designers to collaborate on this mission.
-
----
-
-## 📬 Contact
-**Cyberkonsults LLC**  
-📧 tunjitaiwo@cyberkonsults.org  
-🌐 [dp.cyberkonsults.org](https://dp.cyberkonsults.org)
+├── postcss.config.js
+├── vite.config.js
+├── netlify.toml
+├── vercel.json
+└── README.md
